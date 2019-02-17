@@ -196,11 +196,153 @@
 <!--<h1 style="text-align: center;">-->
     <!--RISK SCORE CALCULATOR FOR BUSINESSES-->
 <!--</h1>-->
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item" ui-sref="insights">
+            <a class="nav-link" href="">Visualization</a>
+        </li>
+        <li class="nav-item active" ui-sref="auction">
+            <a class="nav-link" href="">Auction Data</a>
+        </li>
+        <li class="nav-item" ui-sref="insights">
+            <a class="navbar-brand" href="">Sports Data Analysis</a>
+        </li>
+    </ul>
 </nav>
 
 <div class="container">
+    <div>
+        <div class="row " style="margin-top: 5%">
+            <div class="jumbotron jumbotron-fluid ist-group col-md-12" style="background: mistyrose;">
+                <div class="container text-center">
+                    <h1 class="display-4">Data that matters..!</h1>
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="row col-md-12">
+                <div class="col-md-12">
+                    <table class="table table-bordered" style="background: white">
+                        <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Runs</th>
+                            <th scope="col">Wickets</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Buy?</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="player in players">
+                            <td>{{player.Player}}</td>
+                            <td>{{player.Runs}}</td>
+                            <td>{{player.Wickets}}</td>
+                            <td>{{player.Age}}</td>
+                            <td>{{player.Type}}</td>
+                            <td>{{player.Rating}}</td>
+                            <td>{{player.Buy}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li style="cursor: pointer" ng-click="previous()" class="page-item"><a class="page-link">Previous</a></li>
+                            <li style="cursor: pointer" ng-click="next()" class="page-item"><a class="page-link">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row " style="margin-top: 5%">
+            <div class="jumbotron jumbotron-fluid ist-group col-md-12" style="background: mistyrose;">
+                <div class="container text-center">
+                    <h1 class="display-4">Players with potential</h1>
+                    <p class="lead">Our model identifies these players with great potential in the league.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="row col-md-12">
+                <div class="col-md-12">
+                    <table class="table table-bordered" style="background: white">
+                        <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Runs</th>
+                            <th scope="col">Wickets</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Buy?</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="player in youngPlayers">
+                            <td>{{player.Player}}</td>
+                            <td>{{player.Runs}}</td>
+                            <td>{{player.Wickets}}</td>
+                            <td>{{player.Age}}</td>
+                            <td>{{player.Type}}</td>
+                            <td>{{player.Rating}}</td>
+                            <td>{{player.Buy}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row " style="margin-top: 5%">
+            <div class="jumbotron jumbotron-fluid ist-group col-md-12" style="background: mistyrose;">
+                <div class="container text-center">
+                    <h1 class="display-4">Players with experience you do not want to lose</h1>
+                    <p class="lead">These players are veterans of the league and their experience comes handy in a close match.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-12">
+            <div class="row col-md-12">
+                <div class="col-md-12">
+                    <table class="table table-bordered" style="background: white">
+                        <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Runs</th>
+                            <th scope="col">Wickets</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Buy?</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="player in expsPlayers">
+                            <td>{{player.Player}}</td>
+                            <td>{{player.Runs}}</td>
+                            <td>{{player.Wickets}}</td>
+                            <td>{{player.Age}}</td>
+                            <td>{{player.Type}}</td>
+                            <td>{{player.Rating}}</td>
+                            <td>{{player.Buy}}</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li style="cursor: pointer" ng-click="previousExp()" class="page-item"><a class="page-link">Previous</a></li>
+                            <li style="cursor: pointer" ng-click="nextExp()" class="page-item"><a class="page-link">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-

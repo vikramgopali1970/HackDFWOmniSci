@@ -20,8 +20,8 @@ angular
   ])
   .config(function ($stateProvider) {
 
-      let signaPay =  {
-          name : 'signaPay',
+      let insights =  {
+          name : 'insights',
           url : '/insights',
           templateUrl: 'views/signaPay.html',
           controller: 'AboutCtrl',
@@ -36,7 +36,7 @@ angular
           controllerAs: 'main'
       };
 
-    $stateProvider.state(signaPay);
+    $stateProvider.state(insights);
     $stateProvider.state(auction);
 
   });

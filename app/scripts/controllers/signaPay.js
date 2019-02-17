@@ -45,10 +45,6 @@ angular.module('feApp')
               enabled: false
           },
 
-          subtitle: {
-              text: 'IPL'
-          },
-
           plotOptions: {
               series: {
                   fillColor: {
@@ -474,7 +470,9 @@ angular.module('feApp')
               borderWidth: 1,
               shadow: false
           },
-
+          credits: {
+              enabled: false
+          },
           plotOptions: {
               column: {
                   stacking: 'normal',
@@ -517,9 +515,11 @@ angular.module('feApp')
 
           series: [{
               name:"MI",
+              color: 'blue',
               data: [7, 5, 11, 10, 10, 13, 7, 10]
           }, {
               name:"CSK",
+              color: 'yellow',
               data: [9, 8, 9, 11, 10, 12, 10, 10]
           }]
       });
@@ -547,10 +547,10 @@ angular.module('feApp')
 
           series: [{
               name:"Innings 1",
-              data:  [114.25, 124.23, 151.71, 127.91, 128.31]
+              data:  [160.97, 150.53, 164.93, 152.37, 157.54, 156.36, 163.25, 166.51, 162.6, 165.97]
           }, {
               name:"Innings 2",
-              data:  [104.16, 139.17, 152.72, 124.01, 127.8]
+              data:  [148.29, 136.37, 149.78, 137.41, 145.88, 141.04, 152.27, 144.56, 151.77, 152.44]
           }]
       });
 
