@@ -38,5 +38,6 @@ angular
 
     $stateProvider.state(insights);
     $stateProvider.state(auction);
+    $stateProvider.state("otherwise", { url : '/insights'})
 
   });

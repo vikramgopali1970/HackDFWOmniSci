@@ -700,10 +700,6 @@ angular.module('feApp')
               plotBorderWidth: null,
               plotShadow: false,
               type: 'pie',
-              options3d: {
-                  enabled: true,
-                  alpha: 45
-              }
           },
           title: {
               text: 'Suresh Raina'
